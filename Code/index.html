@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZVK Portfolio</title>
+    <!-- preconnecting to the server where google fonts are hosted can help my website load faster -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- stuff I learn in class -->
+    <!-- target blank opens in new tab -->
+    <!-- this is how you make an image into a link -->
+    <!-- <a href="http://www.hhs.nl" target="_blank">hhhs.nl
+      <img src="https://web-dev.imgix.net/image/admin/i9Cg7nswyO7jB768kpdQ.jpg?auto=format&w=845" alt="webdev">
+    </a> -->
+    <nav>
+      <ul>
+        <li id="nav-contact"><a href="#contact">CONTACT</a></li>
+        <li id="nav-projects"><a href="#projects">PROJECTS</a></li>
+        <li id="nav-about"><a href="#about">ABOUT</a></li>
+        <li id="nav-home"><a href="index.html">HOME</a></li>
+      </ul>
+    </nav>
+
+<!-- HERO SECTION HERO SECTION HERO SECTION HERO SECTION HERO SECTION HERO SECTION HERO SECTION HERO SECTION HERO SECTION HERO SECTION HERO SECTION -->
+
+    <div class="container">
+      <div class="design-box">
+        <h1 class="colorchange">Design,<br>made<br>human</h1>
+      </div>
+      <div class="intro-box">
+        <h1>Hi, I'm Zaya,</h1>
+        <p>and I am a UX-Design student based in The Hague, NL.<br>
+          I specialize in exploring how UX-Design and Design Thinking can be used in various areas like healthcare and city design.</p>
+        <div class="button-row">
+          <button type="button"><a href="#about" class="box-button">Read more</a></button>
+          <button type="button"><a href="#projects" class="box-button">See my projects</a></button>
+          <button type="button"><a href="#contact" class="box-button">Let's talk</a></button>
+        </div>
+      </div>
+    </div>
+
+<!-- ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT  -->
+
+    <div class="about-section" id="about">
+      <div class="about-text">
+        <h1>About me</h1>
+        <p>Hi, nice to meet ya, I'm Zaya. Through my work as a UX-Designer, I love helping people by employing a sprinkle of <em>technology</em>, a handful of <em>creativity</em>, and a lot of <em>curiosity</em> to create inspiring experiences and helpful solutions. </p>
+        <p>In my university's honours programme, I learned how to apply design thinking in various settings by leading creative workshops to redesign The Hague. I also am experienced in using UX-Design in healthcare.</p>
+        <p>Within my one-and-a-half years of studying UX-Design, I've learned to use various tools such as Figma, Protopie, Miro, VS Code, and I am looking forward to learning a lot more!</p>
+        <p>I am a versatile designer and like to <em>stretch the boundaries</em> of where Design Thinking can be applied.</p>
+        <p id="call-to-action">Are you willing to join me?<br><a href="#contact" class="about-contact">Shoot me an email!</a></p>
+      </div>
+      <div class="about-picture">
+        <img src="pictures/portrait.jpg" alt="Self portrait of me">
+      </div>
+   </div>
+      <div class="projects" id="projects">
+        <!-- <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFPkrXB7S0&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFPkrXB7S0&#x2F;view?utm_content=DAFPkrXB7S0&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Expedition Horizon</a> by ZYA
+      </div> -->
+        <h1 class="projects-heading">Projects</h1>
+        <div class="projects-container">
+          <!-- Project 1: Expedition Horizon -->
+          <a href="expeditionhorizon.html" class="project-card">
+            <div>
+              <img src="pictures/eh projects card.png">
+              <h1>Expedition Horizon</h1>
+              <p>Redesigning a city</p>
+            </div>
+          </a>
+          <!-- Project 2: Bingeology -->
+          <a href="bingeology.html" class="project-card">
+            <div>
+              <img src="pictures/bingeology projects card.png">
+              <h1>Bingeology</h1>
+              <p>Applying Design Thinking to Healthcare</p>
+            </div>
+          </a>
+          <!-- Project 3: Webshop redesign -->
+          <a href="vanvien.html" class="project-card">
+            <div>
+              <img src="pictures/vanvien projects card.png">
+              <h1>Van Vien Webshop</h1>
+              <p>The magical transformation of a website</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="contact" id="contact">
+        <h1>Like what you see?</h1>
+        <p>Let's be in contact on <a href="http://www.linkedin.com/in/zaya-victoria-kreft" target="_blank" rel="noopener noreferrer">LinkedIn</a> or <a href="mailto:zvkreft@gmail.com">send me an email</a> :)</p>
+      </div>

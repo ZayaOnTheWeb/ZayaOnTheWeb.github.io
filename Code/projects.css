@@ -1,0 +1,240 @@
+/* I know creating two css files is not the cleanest solution, but this file is for the specific projects page. */
+/* While my website is stylistically consistent, the css file got long. While creating my projects page, I wanted easily referenceable classes that would not clash with other names. */
+* {
+    font-family: "Lexend", sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    overflow-x: hidden;
+    color: white;
+    background-color: #11191d;
+  }
+
+  a {
+    margin: 0.5rem;
+    padding: 1rem;
+    position: fixed;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 45px;
+    background: linear-gradient(222deg, #002634, #ae1f1f, #e8b05c);
+    background-size: 300% 300%;
+    -webkit-animation: background-gradient 5s ease infinite;
+    -moz-animation: background-gradient 5s ease infinite;
+    animation: background-gradient 5s ease infinite;
+  }
+
+  @-webkit-keyframes background-gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+  @-moz-keyframes background-gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+  @keyframes background-gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+
+.title {
+    margin: 5rem 12.5rem;
+}
+
+.title h1{
+    background: linear-gradient(222deg, #002634, #ae1f1f, #e8b05c);
+    background-size: 300% 300%;
+    -webkit-animation: background-gradient 5s ease infinite;
+    -moz-animation: background-gradient 5s ease infinite;
+    animation: background-gradient 5s ease infinite;
+    background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.title h2{
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+.nutshell {
+    margin: 5rem 12.5rem;
+}
+
+.nutshell-heading,
+.left-column h1,
+.right-column h1,
+.overview-pictures h1{
+    font: 600 2.5rem;
+    background: linear-gradient(222deg, #002634, #ae1f1f, #e8b05c);
+    background-size: 300% 300%;
+    -webkit-animation: background-gradient 5s ease infinite;
+    -moz-animation: background-gradient 5s ease infinite;
+    animation: background-gradient 5s ease infinite;
+    background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.nutshell-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    font-weight: 300;
+}
+
+.nutshell-grid h1 {
+    color: white;
+    font-weight: 300;
+}
+
+#problem-statement {
+    font-weight: 600;
+    font-style: italic;
+    margin: 1rem 0;
+}
+
+#better-problem-statement {
+    font-weight: 600;
+    font-style: italic;
+    margin: 1rem 0;
+    background: linear-gradient(222deg, #002634, #ae1f1f, #e8b05c);
+    background-size: 300% 300%;
+    -webkit-animation: background-gradient 5s ease infinite;
+    -moz-animation: background-gradient 5s ease infinite;
+    animation: background-gradient 5s ease infinite;
+    background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.overview {
+    display: grid;
+    padding: 5rem 12.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left-column right-column";
+    background-color: #0C1215;
+}
+
+.overview p {
+    background-color: #0C1215;
+}
+
+.left-column {
+    grid-area: left-column;
+    padding-right: 3rem;
+    background-color: #0C1215;
+}
+
+.right-column {
+    grid-area: right-column;
+    padding-left: 3rem;
+    background-color: #0C1215;
+}
+
+.details-section p,
+.details-section em,
+.details h1,
+.details-left,
+.details-right{
+    background-color: #090D0F;
+    font-weight: 300;
+}
+
+.details img{
+    object-fit: contain;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem 12.5rem 5rem 12.5rem;
+    background: #090D0F;
+    font-weight: 300;
+}
+
+.details-left {
+    padding-right: 3rem;
+}
+
+.details-right {
+    padding-left: 3rem;
+}
+
+.detailsheading {
+    padding: 5rem 12.5rem 1rem 12.5rem;
+     background:#090D0F;
+}
+
+.detailsheading h1{
+    background: #090D0F;
+    background-image: linear-gradient(
+      252.44deg,
+      #002634 0%,
+      #ae1f1f 49.79%,
+      #e8b05c 100%
+    );
+      -webkit-animation: background-gradient 5s ease infinite;
+      -moz-animation: background-gradient 5s ease infinite;
+      animation: background-gradient 5s ease infinite;
+    background-size: 300%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.overview-pictures {
+    padding: 5rem 12.5rem;
+}
+
+.overview-pictures img{
+    width: 30vw;
+    object-fit: fill;
+}
+
+.center {
+    padding: 0rem 12.5rem 5rem 12.5rem;
+}
+
+.center h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background: linear-gradient(222deg, #002634, #ae1f1f, #e8b05c);
+    background-size: 300% 300%;
+    -webkit-animation: background-gradient 5s ease infinite;
+    -moz-animation: background-gradient 5s ease infinite;
+    animation: background-gradient 5s ease infinite;
+    background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.center p{
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}

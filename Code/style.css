@@ -1,0 +1,366 @@
+/* The border-box helps me make sure that if I set a width to an element, it will have exactly that width, unaffected by margins, borders or padding. */
+/* Of course I can still use margins, padding, and borders, they will just show up inside the set width. */
+* {
+  font-family: "Lexend", sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+p {
+  padding: 0.5rem 0;
+}
+
+nav {
+    position: fixed;
+    background: scroll;
+    width: 100vw;
+}
+
+nav li{
+    float: right;
+    padding: 0.5rem 2rem;
+    color: black;
+    font-weight: 400;
+    overflow: hidden;
+}
+
+#nav-home {
+  background: #c6510d;
+}
+
+#nav-about {
+  background: #ae1f1f;
+}
+
+#nav-projects {
+  background: #44242C;
+}
+
+#nav-contact {
+  background: #002634;
+}
+
+/* LANDING PAGE AREA LANDING PAGE AREA LANDING PAGE AREA LANDING PAGE AREA LANDING PAGE AREA LANDING PAGE AREA LANDING PAGE AREA LANDING PAGE AREA  */
+
+.container {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr 2fr 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  gap: 0px 0px;
+  height: 100vh;
+  align-items: center;
+  background: linear-gradient(222deg, #002634, #ae1f1f, #e8b05c);
+    background-size: 300% 300%;
+
+    -webkit-animation: background-gradient 5s ease infinite;
+    -moz-animation: background-gradient 5s ease infinite;
+    animation: background-gradient 5s ease infinite;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . ."
+    "design-box . intro-box ."
+    ". . . .";
+}
+
+@-webkit-keyframes background-gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes background-gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes background-gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.design-box {
+  grid-area: design-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  height: 60vh;
+}
+
+.design-box h1 {
+  /* This is to clip the text to have it have the same color as the background */
+  background-color: #ffffff;
+  background-image: linear-gradient(
+    252.44deg,
+    #002634 0%,
+    #ae1f1f 49.79%,
+    #e8b05c 100%
+  );
+    -webkit-animation: background-gradient 5s ease infinite;
+    -moz-animation: background-gradient 5s ease infinite;
+    animation: background-gradient 5s ease infinite;
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  /* basic text styling */
+  font-size: 4rem;
+}
+
+.intro-box {
+  grid-area: intro-box;
+  color: white;
+}
+
+.intro-box h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  font-style: normal;
+  font-feature-settings: "ss01" on;
+}
+
+.intro-box p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+button {
+  margin: 1.5rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 45px;
+  border: none;
+  background: white;
+}
+
+a.box-button {
+  background-color: white;
+  color: black;
+  padding: 0.5rem;
+  overflow: hidden;
+  text-decoration: none;
+  border-radius: 45px;
+}
+
+/* ABOUT SECTION ABOUT SECTION ABOUT SECTION ABOUT SECTION ABOUT SECTION ABOUT SECTION ABOUT SECTION ABOUT SECTION ABOUT SECTION ABOUT SECTION ABOUT SECTION  */
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1;
+  gap: 0px 0px;
+  align-items: center;
+  background: white;
+  grid-auto-flow: row;
+  grid-template-areas: "about-text about-picture";
+  overflow: hidden;
+}
+
+.about-picture img {
+  grid-area: about-picture;
+  width: 50vw;
+  max-height: 100vh;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.about-text {
+  grid-area: about-text;
+  padding: 5% 10%;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.about-text h1 {
+  /* This is to clip the text to have it have the same color as the background */
+  background-image: linear-gradient(
+    252.44deg,
+    #002634 0%,
+    #ae1f1f 49.79%,
+    #e8b05c 100%
+  );
+    -webkit-animation: background-gradient 5s ease infinite;
+    -moz-animation: background-gradient 5s ease infinite;
+    animation: background-gradient 5s ease infinite;
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  /* basic text styling */
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.about-text p {
+    color: black;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+ 
+em {
+    font-style: italic;
+    font-weight: bold;
+    background-image: linear-gradient(
+    252.44deg,
+    #002634 0%,
+    #ae1f1f 49.79%,
+    #e8b05c 100%
+  );
+    -webkit-animation: background-gradient 5s ease infinite;
+    -moz-animation: background-gradient 5s ease infinite;
+    animation: background-gradient 5s ease infinite;
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+
+#call-to-action {
+  font-size: 1.2rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+  padding-left: 0.5rem;
+}
+  
+a {
+    padding: 0.5rem;
+    overflow: hidden;
+    text-decoration: none;
+    border-radius: 45px;
+    color: #ffffff;
+  }
+
+.about-contact {
+  color: black;
+  margin: -0.5rem;
+  font-style: italic;
+  text-decoration: underline;
+}
+.about-contact:hover {
+    background: linear-gradient(
+        252.44deg,
+        #002634 0%,
+        #ae1f1f 49.79%,
+        #e8b05c 100%
+      );
+      overflow: hidden;
+      color: white;
+}
+
+ /* PROJECT SECTION PROJECT SECTION PROJECT SECTION PROJECT SECTION PROJECT SECTION PROJECT SECTION PROJECT SECTION PROJECT SECTION PROJECT SECTION*/
+.projects {
+  display: grid;
+  grid-template-columns:1fr 5fr 1fr ;
+  grid-template-rows: 0.5fr 1fr 4fr 1fr;
+  grid-template-areas: 
+  ". . ."
+  ". projects-heading ."
+  ". container ."
+  ". . .";
+  width: 100vw;
+  height: 100vh;
+}
+
+.projects-heading{
+  grid-area: projects-heading;
+  overflow: hidden;
+  background-image: linear-gradient(
+    252.44deg,
+    #002634 0%,
+    #ae1f1f 49.79%,
+    #e8b05c 100%
+  );
+    -webkit-animation: background-gradient 5s ease infinite;
+    -moz-animation: background-gradient 5s ease infinite;
+    animation: background-gradient 5s ease infinite;
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  /* basic text styling */
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+ .projects-container {
+  grid-area: container;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  margin: 0;
+ }
+
+ .project-card {
+  background: linear-gradient(222deg, #002634, #ae1f1f, #e8b05c);
+    background-size: 300% 300%;
+
+    -webkit-animation: background-gradient 5s ease infinite;
+    -moz-animation: background-gradient 5s ease infinite;
+    animation: background-gradient 5s ease infinite;
+  padding: 5%;
+  margin: 0 5%;
+  overflow: hidden;
+  color: white;
+ }
+
+ .project-card img {
+  width: 100%;
+ }
+
+ .project-card h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+ }
+
+ .project-card p {
+  font-weight: 300;
+ }
+
+ a.project-card {
+  border-radius: 0;
+ }
+
+ /* CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT */
+ .contact {
+  padding: 5rem;
+  background: linear-gradient(222deg, #002634, #ae1f1f, #e8b05c);
+    background-size: 300% 300%;
+
+    -webkit-animation: background-gradient 5s ease infinite;
+    -moz-animation: background-gradient 5s ease infinite;
+    animation: background-gradient 5s ease infinite;
+ }
+
+.contact p{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ }
+ .contact h1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ }
